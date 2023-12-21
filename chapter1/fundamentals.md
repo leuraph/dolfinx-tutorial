@@ -85,7 +85,7 @@ Find $u\in V$ such that
 
 $\int_\Omega \nabla u \cdot \nabla v \mathrm{d} x = \int_\Omega f v\mathrm{d} x\qquad \forall v \in \hat{V}.$
 
-For the present problem, the test and trial spaces $V$ and $\hat{V}$ is defined as
+For the present problem, the test and trial spaces $V$ and $\hat{V}$ are defined as
 \begin{align}
 V&=\{v\in H^1(\Omega) \vert v=u_D&&\text{on } \partial \Omega \},\\
 \hat{V}&=\{v\in H^1(\Omega) \vert v=0 &&\text{on } \partial \Omega \}.
