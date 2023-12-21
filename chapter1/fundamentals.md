@@ -17,7 +17,7 @@ The Poisson equation is the following boundary-value problem
 u(\mathbf{x}) &= u_D(\mathbf{x})&& \mathbf{x} \in \partial\Omega
 \end{align}
 
-Here, $u=u(\mathbf{x})$ is the unknown function, $f=f(\mathbf{x})$ is a prescribed function, $\nabla^2$ the Laplace operator, often written as $\Delta$, $\Omega$ the spatial domain, and $\partial\Omega$ is the boundary of $\Omega$. The Poisson problem, including both the PDE $-\nabla^2 u = f$ and the boundary condition $u=u_D$ on $\partial\Omega$, is an example of a _boundary-value problem_, which must be precisely state before it makes sense to start solving it numerically with FEniCSx. 
+Here, $u=u(\mathbf{x})$ is the unknown function, $f=f(\mathbf{x})$ is a prescribed function, $\nabla^2$ the Laplace operator, often written as $\Delta$, $\Omega$ the spatial domain, and $\partial\Omega$ is the boundary of $\Omega$. The Poisson problem, including both the PDE $-\nabla^2 u = f$ and the boundary condition $u=u_D$ on $\partial\Omega$, is an example of a _boundary-value problem_, which must be precisely stated before it makes sense to start solving it numerically with FEniCSx. 
 
 In the two dimensional space with coordinates $x$ and $y$, we can expand the Poisson equation as
 
@@ -39,14 +39,14 @@ Solving a boundary value problem in FEniCSx consists of the following steps:
 4. Run the Python program to solve the boundary-value problem. Optionally, you can extend the program to derive quantities such as fluxes and averages,
 and visualize the results.
 
-As we have already covered step 1, we shall now cover step 2-4.
+As we have already covered step 1, we shall now cover steps 2-4.
 
 ## Finite element variational formulation
 
 FEniCSx is based on the finite element method, which is a general and
 efficient mathematical machinery for the numerical solution of
 PDEs. The starting point for the finite element methods is a PDE
-expressed in _variational form_. For readers not familiar with variational problems, it is suggested to reading a proper book on the finite element method in addition, as this tutorial is meant as a brief introduction to the subject. See the original tutorial {cite}`FenicsTutorial` (Chapter 1.6.2).
+expressed in _variational form_. For readers not familiar with variational problems, it is suggested to read a proper book on the finite element method in addition, as this tutorial is meant as a brief introduction to the subject. See the original tutorial {cite}`FenicsTutorial` (Chapter 1.6.2).
 
 The basic recipe for turning a PDE into a variational problem is:
 - Multiply the PDE by a function $v$
@@ -106,7 +106,7 @@ variational problem reads: Find $u_h\in V_h$ such that
 \end{align}
 This variational problem, together with suitable definitions of $V_h$ and $\hat{V}_h$ uniquely define our approximate numerical solution of the Poisson equation. 
 Note that the boundary condition is encoded as part of the test and trial spaces. This might seem complicated at first glance, 
-but means that the finite element variational problem and the continuous variational problem looks the same. 
+but means that the finite element variational problem and the continuous variational problem look the same. 
 
 ## Abstract finite element variational formulation
 
